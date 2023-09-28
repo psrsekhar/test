@@ -18,5 +18,19 @@ var request =
 
     showFooter: function(){
         request.showPage("footer", "html/footer.html");
+    },
+
+    loadWelcomePage: function(){
+        request.showMenu();
+        request.showHome();
+        request.showFooter();
+    },
+
+    showLogin: function(){
+        request.showPage("body", "html/login.html");
+    },
+
+    showRegister: function(){
+        request.showPage("body", "html/register.html");
     }
 }
